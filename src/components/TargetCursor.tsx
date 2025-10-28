@@ -106,7 +106,7 @@ const TargetCursor: React.FC = () => {
       size.current.width = lerp(size.current.width, targetWidth, 0.18);
       size.current.height = lerp(size.current.height, targetHeight, 0.18);
 
-      setRenderState(prev => {
+      setRenderState(_prev => {
         return {
           x: pos.current.x,
           y: pos.current.y,

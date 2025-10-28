@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+
+body{
+  padding: 24px;
+  background-color: #01050d;
+}
+@media(max-width:760px){
+  body{
+    padding: 16px;
+  }
+}

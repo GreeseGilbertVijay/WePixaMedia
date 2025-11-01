@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CardSliderOne from '../components/CardSliderOne';
+import HeadingIcons from '../components/HeadingIcons';
 
 const Index = () => {
   return (
@@ -141,7 +142,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* Hero Section with Video Background */}
+      {/*Boxes Section */}
       <section className="min-h-auto flex items-center justify-center">
         <div className="max-w-6xl py-20">
           <div className="animate-fade-in">
@@ -224,8 +225,9 @@ const Index = () => {
         </div>
       </section>
       {/*CTA Section */}
-      <section className="bg-[#192584] flex flex-col justify-center items-center rounded-2xl">
-        <div className="text-center px-6 max-w-4xl mx-auto py-20 animate-fade-in">
+      <section className="flex w-full justify-center">
+        <div className='max-w-6xl w-full bg-[#192584] rounded-2xl'>
+        <div className=" text-center px-6 py-20 animate-fade-in ">
             <h2 className="text-5xl font-medium mb-8 leading-tight animate-slide-in-right text-white">
                Let’s Create Something<br></br> Extraordinary
             </h2>
@@ -235,9 +237,11 @@ const Index = () => {
             Get In Touch
           </Link>
         </div>
+        </div>
       </section>
       {/* Slider One Section */}
-      <CardSliderOne />      
+      <CardSliderOne />
+      <HeadingIcons />
 
       <Footer />
     </div>

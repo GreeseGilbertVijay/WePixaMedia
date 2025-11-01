@@ -8,7 +8,7 @@ interface Card {
   image: string;
 }
 
-const CardSliderOne: React.FC = () => {
+const Testimonial: React.FC = () => {
   const cards: Card[] = [
     {
       id: 1,
@@ -118,12 +118,18 @@ const CardSliderOne: React.FC = () => {
 
   return (
     <>
-      <div className="mt-24 flex items-center justify-center">
+      <style>{`
+           .testimonial{
+          background-image:url("../lovable-uploads/testimonial-bg.png");
+        }
+      `}
+      </style>
+      <div className="testimonial bg-no-repeat min-h-screen bg-cover bg-center mt-24 flex items-center justify-center">
         <div className="relative w-[90%] max-w-6xl overflow-hidden px-4 py-10">
           {/* Title and Arrows */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-6 md:mb-12 animate-slide-in-right leading-tight text-white">
-              Industries<br className="hidden md:block" /> We Serve
+                Our Testimonials
             </h1>
             <div className="flex gap-2 z-20 self-end md:self-auto">
               <button
@@ -171,10 +177,15 @@ const CardSliderOne: React.FC = () => {
               ))}
             </div>
           </div>
+
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-6 md:mb-12 animate-slide-in-right leading-tight text-white">
+                Our Testimonials
+            </h1>
+        
         </div>
       </div>
     </>
   );
 };
 
-export default CardSliderOne;
+export default Testimonial;

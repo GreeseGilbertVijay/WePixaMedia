@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-            <h1>Spincotech</h1>
+            <h1>WePixaMedia</h1>
               {/* <img 
                 src="/lovable-uploads/c24581a1-d607-4b4e-a879-875a8504cb45.png" 
                 alt="Samatva Awareness" 
